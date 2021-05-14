@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Special+Elite&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Special+Elite&display=swap");
 
-
-.active::before{
+.active::before {
   position: absolute;
   z-index: -1;
   transform: rotate(10deg);
@@ -12,7 +11,7 @@
   border-right-color: transparent;
   border-bottom-color: transparent;
 }
-.active::after{
+.active::after {
   position: absolute;
   z-index: -1;
   transform: rotate(10deg);
@@ -22,11 +21,17 @@
   border: 7px solid #141414;
   border-left-color: transparent;
 }
-.active::before{
+.active::before {
   top: -14px;
   right: 2px;
 }
-.active::after{
-  bottom:-14px;
+.active::after {
+  bottom: -14px;
   left: 2px;
+}
+
+@media (max-width: 360px) {
+  .smalltext {
+    font-size: 10px;
+  }
 }

@@ -14,14 +14,17 @@ const Footer = () => {
     "Datenschutz",
     "Impressum",
     "Rechtstexte",
-    "Produktinformationsblatter",
+    "Produktinformationsblätter",
   ];
   return (
     <div style={{ backgroundColor: "#74C3B2" }} className="text-white w-full">
       <div className=" max-w-screen-2xl m-auto md:flex block w-full justify-between pt-10">
         <div className="lg:text-lg md:text-base text-sm md:w-1/3 justify-around w-full px-2">
           <h1 className="pb-6 text-md md:text-xl">Kundenbetreuung</h1>
-          <a className="text-base md:text-xl lg:text-2xl" href="tel: 08000033233">
+          <a
+            className="text-base md:text-xl lg:text-2xl"
+            href="tel: 08000033233"
+          >
             0800 00 33233
           </a>
           <p className="pb-6">(kostenlos aus dt. Netzen)</p>
@@ -29,16 +32,16 @@ const Footer = () => {
           <p className="pb-6">MO.- Sa. 8:00 bis 20:00 Uhr</p>
           <h1>E-Mail</h1>
           <a
-            className="lg:text-xl md:text-base text-md"
+            className="lg:text-xl md:text-base text-lg"
             href="mailto: kundenbetreuung@norma-connect.de"
           >
             kundenbetreuung@norma-connect.de
           </a>
         </div>
-        <div className="flex justify-between md:justify-around md:px-6 px- md:w-2/3 w-full md:pt-0 pt-10 ">
+        <div className="flex md:justify-around md:px-6  md:w-2/3 w-full md:pt-0 pt-10 ">
           <div className="h-20">
-            <h1 className="pb-4 md:text-xl text-sm px-2">Service</h1>
-            <ul className="md:block flex flex-wra md:text-lg text-xs">
+            <h1 className="pb-2 md:text-xl text-sm px-2">Service</h1>
+            <ul className="md:block flex md:text-lg text-xs smalltext">
               <div>
                 {serviceList1.map((service, index) => {
                   return (
@@ -62,13 +65,13 @@ const Footer = () => {
               </div>
             </ul>
           </div>
-          <div className="">
-            <h1 className="pb-4  md:text-xl text-sm pr-2 ">Produkte</h1>
+          <div className="px-6 md:px-0">
+            <h1 className="pb-2  md:text-xl text-xs pr-2 ">Produkte</h1>
             <ul className="px-0">
               {product.map((product, index) => {
                 return (
                   <li
-                    className="list-disc ml-5 leading-7 md:text-lg text-xs tracking-tight"
+                    className="list-disc ml-5 leading-7 md:text-lg text-xs smalltext tracking-tight"
                     key={index}
                   >
                     {product}
@@ -85,7 +88,7 @@ const Footer = () => {
             {bottomContent.map((bottomContent, index) => {
               return (
                 <a href="#" key={index}>
-                  <li className="md:text-lg lg:text-2xl tracking-tighter text-xs">
+                  <li className="md:text-lg lg:text-2xl tracking-tighter smalltext">
                     {bottomContent}
                   </li>
                 </a>
@@ -95,7 +98,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="py-6 text-center">
-        <h1 className="text-sm md:text-base lg:text-xl">Fubnoten einblenden</h1>
+        <h1 className="text-sm md:text-base lg:text-xl">
+          <span className="px-4">&#9662;</span> Fußnoten einblenden <span className="px-4">&#9662;</span>{" "}
+        </h1>
       </div>
     </div>
   );
