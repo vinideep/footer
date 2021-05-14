@@ -29,7 +29,7 @@ const Footer = () => {
           <p className="pb-6">MO.- Sa. 8:00 bis 20:00 Uhr</p>
           <h1>E-Mail</h1>
           <a
-            className="text-xl"
+            className="md:text-xl text-md"
             href="mailto: kundenbetreuung@norma-connect.de"
           >
             kundenbetreuung@norma-connect.de
@@ -79,10 +79,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border-b-2 border-t-2 max-w-screen-2xl m-auto mt-10 px-4">
+      <div className="border-b-2 border-t-2 max-w-screen-2xl m-auto mt-10 mx-2">
         <ul className="flex justify-between py-4">
           {bottomContent.map((bottomContent, index) => {
-            return <li className="md:text-2xl text-md">{bottomContent}</li>;
+            return <li className="md:text-lg lg:text-2xl tracking-tight text-xs">{bottomContent}</li>;
           })}
         </ul>
       </div>

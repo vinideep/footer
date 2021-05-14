@@ -9,8 +9,8 @@ function App() {
   
   
   return (
-    <div className="mt-20 w-full">
-      <SimpleSlider />
+    <div className="m">
+      {/* <SimpleSlider /> */}
       <Footer />
     </div>
   );
