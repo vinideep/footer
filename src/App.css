@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Special+Elite&display=swap');
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +38,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+.active::before{
+  position: absolute;
+  z-index: -1;
+  transform: rotate(10deg);
+  content: "";
+  width: 42px;
+  display: block;
+  border: 10px solid #141414;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+.active::after{
+  position: absolute;
+  z-index: -1;
+  transform: rotate(10deg);
+  content: "";
+  width: 42px;
+  display: block;
+  border: 7px solid #141414;
+  border-left-color: transparent;
+}
+.active::before{
+  top: -14px;
+  right: 2px;
+}
+.active::after{
+  bottom:-14px;
+  left: 2px;
 }
